@@ -1,2 +1,2 @@
 # UnityShortcuts
-A collection of shortcuts that automate some
+A collection of shortcuts that automate some workflows.
