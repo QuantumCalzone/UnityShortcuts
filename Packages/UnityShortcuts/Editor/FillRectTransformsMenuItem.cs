@@ -3,7 +3,6 @@ using UnityEngine;
 
 namespace George
 {
-
     public static class FillRectTransformsMenuItem
     {
         private const string menuItemItemName = "Tools/UI/Rect Transform Fill %#r";
@@ -92,5 +91,4 @@ namespace George
                         rectTransform.pivot != (Vector2.one * 0.5f);
         }
     }
-
 }
