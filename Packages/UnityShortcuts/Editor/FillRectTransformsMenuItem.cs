@@ -1,4 +1,5 @@
-﻿using UnityEditor;
+﻿#if UNITY_EDITOR
+using UnityEditor;
 using UnityEngine;
 
 namespace George
@@ -13,17 +14,17 @@ namespace George
         {
             var selectedGameObjects = Selection.gameObjects;
 
-            for(var i = 0; i < selectedGameObjects.Length; i++)
+            for (var i = 0; i < selectedGameObjects.Length; i++)
             {
                 var rectTransform = selectedGameObjects[i].GetComponent<RectTransform>();
 
-                if(rectTransform)
+                if (rectTransform)
                 {
-                    if(!IsFilled(rectTransform))
+                    if (!IsFilled(rectTransform))
                     {
                         var isInScene = rectTransform.gameObject.scene.name != null;
 
-                        if(isInScene)
+                        if (isInScene)
                         {
                             Undo.RecordObject(rectTransform, string.Format("{0}RectTransformFill", rectTransform.GetInstanceID()));
                         }
@@ -34,7 +35,7 @@ namespace George
                         rectTransform.sizeDelta = Vector2.zero;
                         rectTransform.pivot = Vector2.one * 0.5f;
 
-                        if(isInScene)
+                        if (isInScene)
                         {
                             // I think Undo.RecordObject marks the scene dirty already...
                             //EditorSceneManager.MarkSceneDirty();
@@ -57,10 +58,10 @@ namespace George
 
             var hasRectTransform = false;
 
-            for(var i = 0; i < selectedGameObjects.Length; i++)
+            for (var i = 0; i < selectedGameObjects.Length; i++)
             {
                 var rectTransform = selectedGameObjects[i].GetComponent<RectTransform>();
-                if(rectTransform)
+                if (rectTransform)
                 {
                     hasRectTransform = true;
                     break;
@@ -92,3 +93,5 @@ namespace George
         }
     }
 }
+
+#endif
