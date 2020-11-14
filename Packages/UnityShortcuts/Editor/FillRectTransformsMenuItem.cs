@@ -2,7 +2,7 @@
 using UnityEditor;
 using UnityEngine;
 
-namespace George
+namespace UnityShortcuts
 {
     public static class FillRectTransformsMenuItem
     {
@@ -45,7 +45,7 @@ namespace George
                             EditorUtility.SetDirty(rectTransform);
                         }
 
-                        Debug.Log(string.Format("Filled {0} | isInScene: {1}", rectTransform.name, isInScene), rectTransform);
+                        //Debug.Log(string.Format("Filled {0} | isInScene: {1}", rectTransform.name, isInScene), rectTransform);
                     }
                 }
             }
@@ -93,5 +93,4 @@ namespace George
         }
     }
 }
-
 #endif
