@@ -4,9 +4,7 @@
       "version": "file:UnityShortcuts",
       "depth": 0,
       "source": "embedded",
-      "dependencies": {
-        "com.unity.ugui": ""
-      }
+      "dependencies": {}
     },
     "com.unity.ide.visualstudio": {
       "version": "2.0.3",

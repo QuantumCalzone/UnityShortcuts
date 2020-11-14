@@ -1,28 +1,25 @@
 {
-    "name": "com.quantumcalzone.unityshortcuts",
-    "displayName": "UnityShortcuts",
-    "description": "A collection of shortcuts that automate some workflows.",
-    "version": "1.0.3",
-    "unity": "2018.1",
-    "license": "MIT",
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/QuantumCalzone/UnityShortcuts.git"
-    },
-    "author": {
-        "name": "QuantumCalzone",
-        "email": "QuantumCalzone@gmail.com",
-        "url": "https://github.com/QuantumCalzone"
-    },
-    "type": "tool",
-    "keywords": [
-        "unity",
-        "shortcuts",
-        "quantum",
-        "calzone"
-    ],
-    "category": "QuantumCalzone",
-    "dependencies": {
-        "com.unity.ugui": ""
-    }
+  "name": "com.quantumcalzone.unityshortcuts",
+  "displayName": "UnityShortcuts",
+  "description": "A collection of shortcuts that automate some workflows.",
+  "version": "1.0.3",
+  "unity": "2018.1",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/QuantumCalzone/UnityShortcuts.git"
+  },
+  "author": {
+    "name": "QuantumCalzone",
+    "email": "QuantumCalzone@gmail.com",
+    "url": "https://github.com/QuantumCalzone"
+  },
+  "type": "tool",
+  "keywords": [
+    "unity",
+    "shortcuts",
+    "quantum",
+    "calzone"
+  ],
+  "category": "QuantumCalzone"
 }
