@@ -2,7 +2,7 @@
     "name": "com.quantumcalzone.unityshortcuts",
     "displayName": "UnityShortcuts",
     "description": "A collection of shortcuts that automate some workflows.",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "unity": "2018.1",
     "license": "MIT",
     "repository": {
