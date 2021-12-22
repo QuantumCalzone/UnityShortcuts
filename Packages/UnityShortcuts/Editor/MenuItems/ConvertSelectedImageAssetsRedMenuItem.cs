@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿#if UNITY_EDITOR
+using System.IO;
 using UnityEditor;
 using UnityEngine;
 
@@ -12,7 +13,7 @@ public static class ConvertSelectedImageAssetsRedMenuItem
     {
         var selectedObjects = Selection.objects;
 
-        for (var i= 0; i < selectedObjects.Length; i++)
+        for (var i = 0; i < selectedObjects.Length; i++)
         {
             var selectedObject = selectedObjects[i];
             var selectedObjectPath = AssetDatabase.GetAssetPath(selectedObject);
@@ -56,3 +57,4 @@ public static class ConvertSelectedImageAssetsRedMenuItem
         File.WriteAllBytes(atPath, newTexture2DBytes);
     }
 }
+#endif
